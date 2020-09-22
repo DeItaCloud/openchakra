@@ -60,7 +60,7 @@ const Editor: React.FC = () => {
     >
       {isEmpty && (
         <Text maxWidth="md" color="gray.400" fontSize="xl" textAlign="center">
-          Drag some component to start coding without code! Or load{' '}
+          从左侧拖动组件来创建你的页面！ 或者加载{' '}
           <Link
             color="gray.500"
             onClick={(e: React.MouseEvent) => {
@@ -69,7 +69,7 @@ const Editor: React.FC = () => {
             }}
             textDecoration="underline"
           >
-            the onboarding components
+            演示组件
           </Link>
           .
         </Text>

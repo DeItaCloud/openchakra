@@ -125,7 +125,7 @@ const Inspector = () => {
           justifyContent="space-between"
           flexDir="column"
         >
-          {isRoot ? 'Document' : type}
+          {isRoot ? '文件' : type}
           {!!component.componentName && (
             <Text fontSize="xs" fontWeight="light">
               {component.componentName}

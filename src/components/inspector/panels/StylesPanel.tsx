@@ -32,36 +32,36 @@ const StylesPanel: React.FC<Props> = ({
     )}
 
     {!isRoot && !parentIsRoot && (
-      <AccordionContainer title="Parent">
+      <AccordionContainer title="父组件">
         <ParentInspector />
       </AccordionContainer>
     )}
 
     {showChildren && (
-      <AccordionContainer title="Children">
+      <AccordionContainer title="子组件">
         <ChildrenInspector />
       </AccordionContainer>
     )}
 
     {!isRoot && (
       <>
-        <AccordionContainer title="Layout">
+        <AccordionContainer title="布局">
           <DisplayPanel />
         </AccordionContainer>
-        <AccordionContainer title="Spacing">
+        <AccordionContainer title="间距">
           <PaddingPanel type="margin" />
-          <PaddingPanel type="padding" />
+          <PaddingPanel type="填充" />
         </AccordionContainer>
-        <AccordionContainer title="Size">
+        <AccordionContainer title="尺寸">
           <DimensionPanel />
         </AccordionContainer>
-        <AccordionContainer title="Typography">
+        <AccordionContainer title="版式">
           <TextPanel />
         </AccordionContainer>
       </>
     )}
 
-    <AccordionContainer title="Backgrounds">
+    <AccordionContainer title="背景">
       <ColorsControl
         withFullColor
         label="Color"
@@ -72,11 +72,11 @@ const StylesPanel: React.FC<Props> = ({
 
     {!isRoot && (
       <>
-        <AccordionContainer title="Border">
+        <AccordionContainer title="边框">
           <BorderPanel />
         </AccordionContainer>
 
-        <AccordionContainer title="Effect">
+        <AccordionContainer title="效果">
           <EffectsPanel />
         </AccordionContainer>
       </>

@@ -114,7 +114,7 @@ const Header = () => {
                   htmlFor="preview"
                   pb={0}
                 >
-                  Builder mode
+                  编辑模式
                 </FormLabel>
               </Tooltip>
               <Switch
@@ -128,7 +128,7 @@ const Header = () => {
 
             <FormControl>
               <FormLabel color="gray.200" fontSize="xs" htmlFor="code" pb={0}>
-                Code panel
+                代码区
               </FormLabel>
               <Switch
                 isChecked={showCode}
